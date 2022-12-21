@@ -6,74 +6,102 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contacto</title>
         <link rel="shortcut icon" href="../assets/img/logoHead.png" type="image/x-icon">
+        <!-- CSS only (Boostrap) -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="../assets/css/style.css">
     </head>
-    <body class="body__sinAside">
+    <body>
         <div class="loading">
             <i class="fa-solid fa-spinner"></i>
         </div>
-        <header class="contacto__encabezado">
-            <div class="encabezado__info">
-                <h1>CONTACTO</h1>
+        <header>
+            <div class="d-flex align-items-center justify-content-center">
+                <h1 class="h1header position-absolute text-white">CONTACTO</h1>
+                <img src="../assets/img/imgContacto.jpg" class="imgHeader" alt="...">
             </div>
         </header>
-        <nav class="navegador">
-            <div class="cajaLogo">
-                <img src="../assets/img/logoHead.png" alt="">
-                <p><strong>Adiestramiento Canino</strong></p>
+        <nav class="navbar navbar-dark bg-dark sticky-top">
+            <div class="navEscritorio container-fluid">
+                <div class="align-items-start">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/img/logoHead.png" alt="Bootstrap" width="30" height="24">
+                        Adiestramiento Canino
+                    </a>
+                </div>
+                <div class="navegacion align-items-end">
+                    <i class="fa-solid fa-bars"></i>
+                    <a class="navbar-brand" href="../index.html">Inicio</a>
+                    <a class="navbar-brand" href="../pages/quienesSomos.html">Quienes Somos</a>
+                    <a class="navbar-brand" href="../pages/servicios.html">Servicios</a>
+                    <a class="navbar-brand" href="../pages/galeria.html">Galería</a>
+                    <a class="navbar-brand" href="../pages/contacto.html">Contacto</a>
+                </div>
             </div>
-            <div class="cajaLista">
-                <i class="fa-solid fa-bars"></i>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/quienesSomos.html">Quienes Somos</a></li>
-                    <li><a href="../pages/servicios.html">Servicios</a></li>
-                    <li><a href="../pages/galeria.html">Galería</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
+            <div class="navCelular container-fluid">
+                <button class="navCelular navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navCelular navbar-brand" href="#"><img src="../assets/img/logoHead.png" alt="Bootstrap" width="21" height="21">Adiestramiento Canino</a>
+                <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../pages/quienesSomos.html">Quienes Somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../pages/galeria.html">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
         <main>
             <h2 class="subtitulos">CONTACTANOS</h2>
-            <section class="contacto">
-                <div class="contacto__formulario">
-                    <form action="" method="get" enctype="multipart/form-data" id="form">
-                        <label>
-                            Nombre:
-                            <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
-                        </label>
-                        <br>
-                        <br>
-                        <label>
-                            Apellido:
-                            <input type="text" name="apellido" placeholder="Ingrese su apellido" required>
-                        </label>
-                        <br>
-                        <br>
-                        <label>
-                            Email:
-                            <input type="email" name="email" id="" placeholder="Ingrese su email" required>
-                        </label>
-                        <br>
-                        <br>
-                        <label>
-                            Dejanos tu mensaje:
-                            <textarea name="Mensaje" placeholder="Ingrese un mensaje"></textarea>
-                        </label>
-                        <br>
-                        <br>
-                        <input class="btn" type="submit" value="Enviar">
-                    </form>
+            <section class="row">
+                <form class="col-9 col-xl-6 mx-5">
+                    <div class="mb-3">
+                        <label class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" placeholder="Ingrese su nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Apellido:</label>
+                        <input type="text" class="form-control" placeholder="Ingrese su apellido" required>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Email:</label>
+                      <input type="email" class="form-control" placeholder="Ingrese su email" required>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Dejanos tu mensaje:</label>
+                      <textarea type="text" class="form-control" placeholder="Ingrese un mensaje"></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="">
+                      <label class="form-check-label" for="exampleCheck1">Quiero recibir novedades</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+                <div class="row col-9 col-xl-4 mx-5 mb-5">
+                    <img class="img-fluid" src="../assets/img/imgZonas.PNG" alt="">
+                    <i class="fa-sharp fa-solid fa-location-dot mt-2">Ciudad Autonoma de Buenos Aires y alrededores</i>
                 </div>
             </section>
         </main>
-        <aside>
-
-        </aside>
         <footer>
             <p>Todos los derechos reservados<p>
         </footer>
         <script src="../assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     </body>
 </html>

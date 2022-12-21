@@ -3,7 +3,6 @@
     padding: 0%;
     box-sizing: border-box;
 }
-
 .loading{
     width: 100vw;
     height: 100vh;
@@ -21,7 +20,6 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
-
 @keyframes rotar{
     0%{
         transform: rotateZ(0deg);
@@ -30,8 +28,6 @@
         transform: rotateZ(360deg);
     }
 }
-
-/*GRIDS*/
 .body__index{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -42,7 +38,6 @@
                          "aside  aside  aside  aside"
                          "footer footer footer footer";
 }
-
 .body__conAside{
     display: grid;
     grid-template-columns: repeat(3,1fr) 330px;
@@ -61,38 +56,26 @@
                          "main   main   main   main"
                          "footer footer footer footer";
 }
-
 @media(max-width:320px){
     .body__index{
-    grid-template-rows: 63px 200px auto auto 20px;
-    grid-template-areas: "nav    nav    nav    nav"
-                         "header header header header"
-                         "main   main   main   main"
-                         "aside  aside  aside  aside"
-                         "footer footer footer footer";
+        grid-template-rows: 200px 63px auto auto 20px;
     }
     .body__conAside{
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 63px 200px auto auto 20px;
-        grid-template-areas: "nav    nav    nav    nav"
-                             "header header header header"
+        grid-template-rows: 200px 63px auto auto 20px;
+        grid-template-areas: "header header header header"
+                             "nav    nav    nav    nav"
                              "main   main   main   main"
                              "aside  aside  aside  aside"
                              "footer footer footer footer";
     }
     .body__sinAside{
-        grid-template-rows: 63px 200px auto 20px;
-        grid-template-areas: "nav    nav    nav    nav"
-                             "header header header header"
-                             "main   main   main   main"
-                             "footer footer footer footer";
+        grid-template-rows: 200px 63px auto 20px;
     }
 }
-
-
 /*INDEX*/
 /*ENCABEZADO*/
-header{
+.header{
     grid-area: header;
     background-size:cover;
     display: flex;
@@ -111,7 +94,7 @@ header{
     font-size: x-large;
 }
 @media(max-width:320px){
-    header{
+    .header{
         font-size: small;
     }
     .encabezado__info p{
@@ -130,7 +113,6 @@ header{
     margin: 15px 0px;
     font-size:medium;
 }
-
 /*NAVEGADOR*/
 .navegador{
     grid-area: nav;
@@ -144,9 +126,6 @@ header{
 .navegador .fa-bars{
     display: none;
 }
-
-
-
 /*LOGO*/
 .cajaLogo{
     display: flex;
@@ -161,7 +140,6 @@ header{
     padding: 18px;
     font-size: x-large;
 }
-
 /*LISTA*/
 .cajaLista > ul{
     list-style-type: none;
@@ -194,7 +172,6 @@ header{
     font-size: 15px;
     text-align: center;
 }
-
 @media(max-width:320px){
     .navegador .fa-bars{
         display: block;
@@ -217,15 +194,12 @@ header{
         height: 100vh;
         transition: 0.2s;
     }
-
     .navegador .fa-bars:hover + ul{
         left: 0;
     }
     .navegador ul:hover{
         left: 0;
     }
-
-
     .cajaLogo img{
         display: none;
     }
@@ -233,12 +207,10 @@ header{
         display: none;
     }
 }
-
 /*MAIN*/
 main{
     grid-area: main;
 }
-
 /*SUBTITULOS*/
 .subtitulos{
     margin: 40px 0px 30px;
@@ -251,7 +223,6 @@ main{
         font-size: large;
     }
 }
-
 /*TARJETAS*/
 .tarjetas{
     display: flex;
@@ -286,12 +257,10 @@ main{
     font-size: large;
     text-align: left;
 }
-
 /*ASIDE*/
 aside{
     grid-area: aside;
 }
-
 /*TESTIMONIOS*/
 .testimonios{
 display: flex;
@@ -328,7 +297,6 @@ margin-bottom: 5px;
     font-size:small;
     text-align:justify;
 }
-
 /*PIE DE PAGINA*/
 footer{
     grid-area: footer;
@@ -336,7 +304,6 @@ footer{
     color: white;
     text-align: right;
 }
-
 /*QUIENES SOMOS*/
 .quienesSomos__encabezado{
     background-image: url(../img/imgQuienesSomos.jpg);
@@ -378,53 +345,45 @@ footer{
         margin-bottom: 10px;
     }
 }
-
 /*SERVICIOS*/
 .servicios__encabezado{
     background-image: url(../img/imgServicios.jpg);
 }
-
-/*GALERIA*/
-.galeria__encabezado{
-    background-image: url(../img/imgGaleria.jpg);
+.imgHeader{
+    width: 100vw;
 }
-.galerias{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.h1header{
+    font-size: 6vw;
+    background-color: rgba(165, 42, 42, 0.384);
+    border-radius: 9px;
 }
-.galeria{
-    width: 800px;
+.navEscritorio .navegacion a:hover{
+    background-color:brown;
 }
-.galeria img{
-    width: 100%;
+.navCelular a{
+    font-size: 20px;
+}
+.navCelular ul li a:hover{
+    background-color:brown;
+}
+@media(min-width:800px){
+    .navCelular{
+        display: none;
+    }
+}
+@media(max-width:800px){
+    .navEscritorio div{
+        display: none;
+    }
 }
 .galeria__desc{
-    font-size:x-large;
+    font-size:large;
     font-weight: 700;
     margin-left: 10px;
     margin-bottom: 40px;
 }
-
-/*CONTACTO*/
-.contacto__encabezado{
-    background-image: url(../img/imgContacto.jpg);
-}
-.contacto{
-    display: block;
-    width: 300px;
-    padding: 15px;
-    margin-left: 50px;
-}
-.contacto__formulario label{
-    font-size: large
-}
-.contacto__formulario label input{
-    width: 100%;
-    height: 50px;
-}
-.contacto__formulario textarea{
-    width: 100%;
-    height: 100px;
-    margin-top: 5px;
+@media(min-width:480px){
+    .galeria__desc{
+        font-size:x-large;
+    }
 }
