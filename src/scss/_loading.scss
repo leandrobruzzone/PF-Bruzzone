@@ -1,0 +1,25 @@
+.loading{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.336);
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i{
+        color: white;
+        font-size: 50px;
+        animation-name: rotar;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes rotar{
+        0%{
+            transform: rotateZ(0deg);
+        }
+        100%{
+            transform: rotateZ(360deg);
+        }
+    }
+}

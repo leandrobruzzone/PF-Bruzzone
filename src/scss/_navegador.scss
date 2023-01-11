@@ -1,0 +1,19 @@
+.navEscritorio .navegacion a:hover{
+    background-color:brown;
+}
+.navCelular a{
+    font-size: 20px;
+}
+.navCelular ul li a:hover{
+    background-color:brown;
+}
+@media(min-width:800px){
+    .navCelular{
+        display: none;
+    }
+}
+@media(max-width:800px){
+    .navEscritorio div{
+        display: none;
+    }
+}

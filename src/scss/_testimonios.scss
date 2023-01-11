@@ -1,0 +1,36 @@
+.testimonios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-bottom: 50px;
+    .testimonio{
+        display: flex;
+        width: 500px;
+        border: solid 1px;
+        border-radius: 8px;
+        overflow: hidden;
+        padding: 15px;
+        margin: 10px;
+        background-color: #F2EAD0;
+        transition: 0.3s;
+        .testimonio__img{
+            width: 100px;
+            height: 100px;
+        }
+        .testimonio__info{
+            text-align: center;
+            .testimonio__titulo{
+                font-size: 100%;
+                margin-bottom: 10px;
+            }
+            .testiminio__desc{
+                margin-left: 10px;
+                font-size:small;
+                text-align:justify;
+            }
+        }
+    }
+    .testimonio:hover{
+        transform: scale(1.1)
+    }
+}

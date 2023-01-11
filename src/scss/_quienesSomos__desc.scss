@@ -1,0 +1,9 @@
+.quienesSomos__desc{
+    margin: 30px 90px 30px 120px;
+    text-align: justify;
+}
+@media(max-width:320px){
+    .quienesSomos__desc{
+        margin: 15px 10px 15px 40px;
+    }
+}

@@ -1,0 +1,11 @@
+.galeria__desc{
+    font-size:large;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+@media(min-width:480px){
+    .galeria__desc{
+        font-size:x-large;
+    }
+}
