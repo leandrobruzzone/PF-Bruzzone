@@ -1,3 +1,12 @@
+.quienesSomos__subtitulos{
+    margin: 45px 90px 30px 120px;
+}
+@media(max-width:320px){
+    .quienesSomos__subtitulos{
+        margin: 30px 10px 15px 40px;
+        font-size: large;
+    }
+}
 .quienesSomos__desc{
     margin: 30px 90px 30px 120px;
     text-align: justify;

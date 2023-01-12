@@ -13,7 +13,7 @@ section.row {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.336);
   position: fixed;
-  z-index: 3;
+  z-index: 1500;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,8 +164,24 @@ section.row {
 
 .imgHeader {
   width: 100vw;
+  height: 30vh;
 }
 
+@media (min-width: 321px) {
+  .imgHeader {
+    height: 50vh;
+  }
+}
+@media (min-width: 481px) {
+  .imgHeader {
+    height: 70vh;
+  }
+}
+@media (min-width: 601px) {
+  .imgHeader {
+    height: 80vh;
+  }
+}
 .navEscritorio .navegacion a:hover {
   background-color: brown;
 }
@@ -198,6 +214,16 @@ section.row {
 @media (min-width: 480px) {
   .galeria__desc {
     font-size: x-large;
+  }
+}
+.quienesSomos__subtitulos {
+  margin: 45px 90px 30px 120px;
+}
+
+@media (max-width: 320px) {
+  .quienesSomos__subtitulos {
+    margin: 30px 10px 15px 40px;
+    font-size: large;
   }
 }
 .quienesSomos__desc {
