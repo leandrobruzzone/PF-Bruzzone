@@ -164,24 +164,8 @@ section.row {
 
 .imgHeader {
   width: 100vw;
-  height: 30vh;
 }
 
-@media (min-width: 321px) {
-  .imgHeader {
-    height: 50vh;
-  }
-}
-@media (min-width: 481px) {
-  .imgHeader {
-    height: 70vh;
-  }
-}
-@media (min-width: 601px) {
-  .imgHeader {
-    height: 80vh;
-  }
-}
 .navEscritorio .navegacion a:hover {
   background-color: brown;
 }
