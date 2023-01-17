@@ -59,9 +59,14 @@ section.row {
   font-size: xx-large;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 750px) {
   .subtitulos {
     margin: 40px 0px 10px;
+    font-size: x-large;
+  }
+}
+@media (max-width: 580px) {
+  .subtitulos {
     font-size: large;
   }
 }
@@ -204,7 +209,7 @@ section.row {
   margin: 45px 90px 30px 120px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 950px) {
   .quienesSomos__subtitulos {
     margin: 30px 10px 15px 40px;
     font-size: large;
@@ -215,7 +220,7 @@ section.row {
   text-align: justify;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 950px) {
   .quienesSomos__desc {
     margin: 15px 10px 15px 40px;
   }
